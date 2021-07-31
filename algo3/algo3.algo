@@ -1,0 +1,24 @@
+PROCEDURE dot_product(v1,v2)
+VAR
+    v1,v2 : ARRAY_OF INTEGER[1];
+    x1,x2,y1,y2,ps : number;
+BEGIN
+    ps=v1[0]*v2[0]+v1[1]*v2[1];
+END
+ALGORITHM orthogonal
+VAR
+    arr : ARRAY_OF v1,v2 : ARRAY_OF INTEGER[1];[n];
+    j=i+1
+BEGIN
+    FOR i FROM 0 TO arr.length-1 STEP step 1 DO
+        FOR j FROM 1 TO arr.length-2 STEP step  DO
+            IF (dot_product(arr[i], arr[j])=0) THEN
+                write(arr[i],arr[j]: are orthogono)
+            ELSE
+                write(arr[i],arr[j]: are not orthogono)
+            END_IF
+                
+            END_IF
+        END_FOR
+    END_FOR
+END
